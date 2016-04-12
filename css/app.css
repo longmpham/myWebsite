@@ -7,6 +7,11 @@
 	margin: 0 auto;
 }
 
+.site-logo img{
+	height: 60px;
+	width: 60px;
+}
+
 
 /****************************************************************************************
 								PHONES - SMALL SCREENS
@@ -33,6 +38,11 @@
 	line-height: 2;
 }
 
+#offCanvas a img {
+	width: 60px;
+	height: 60px;
+}
+
 .js-off-canvas-exit{
 	background: rgba(255,255,255,0.5);
 }
@@ -48,7 +58,6 @@
 }
 
 .site-logo a{
-	color: white;
 	line-height: 80px;
 }
 
@@ -80,6 +89,27 @@
 	padding-left: 0px;
 	padding-right: 0px;
 	height: 400px;
+	background-image: url(../images/herobackground1.png);
+}
+
+.hero h1{
+	color: rgba(255,255,255,0.8);
+}
+
+.hero h3{
+	color: rgba(255,255,255,0.8);
+}
+
+.hero h5{
+	color: rgba(200,0,255,0.8);
+}
+
+.hero img {
+	width: 350px;
+}
+
+.hero #contactButton{
+	background-color: #C800FF;
 }
 
 
@@ -93,12 +123,21 @@
 	padding-right: 0px;
 }
 
+.main h1,h2,h3,h4,h5,p {
+	color: rgba(0,0,0,0.8);
+}
+
+#realworldtext {
+	font-family: digital;
+	font-weight: bold;
+}
+
 
 /****************************************************************************************
 									FOOTER
 *****************************************************************************************/
 footer{
-	background-color: #303030;
+	background-color: #101010;
 	padding-bottom: 20px;
 	padding-top: 50px;
 	padding-left: 0px;
@@ -135,7 +174,6 @@ footer a:hover{
 								MEDIA QUERIES
 *****************************************************************************************/
 @media (max-width: 639px){
-
 	.nav-desktop{
 		display: none;
 	}
