@@ -1,162 +1,127 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <div class="off-canvas-content" data-off-canvas-content>
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        
-        <!-- THE OFF-CANVAS NAV BAR -->
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-          <h5>Menu</h5>
-          <ul>
-            <li><a href="index.html"><img class="site-logo" src="images/logo.png"></a></li>
-            <!-- <li><a href="About.html">About</a></li> -->
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
-          </ul>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
+    </nav>
 
-          <!-- MOBILE NAV -->
-        <div class="off-canvas-content" data-off-canvas-content>
-          <div class="title-bar show-for-small-only">
-            <div class="title-bar-left">
-              <button class="menu-icon" type="button" data-open="offCanvas"></button>
-              <span class="title-bar-title">Menu</span>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Scrolling Nav</h1>
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                </div>
             </div>
-          </div>
-
-
-          <!-- DESKTOP NAV -->
-          <nav class="top-bar nav-desktop">
-            <div class="wrap">
-              <div class="top-bar-title">
-                <h4 class="site-logo"><a href="#"><img src="images/logo.png"></a></h3>
-              </div>
-
-              <div id="responsive-menu">
-                <div class="top-bar-left">
-                  <ul class="menu menu-desktop">
-                    <!-- <li><a href="About.html">About</a></li> -->
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-
-
-          <!-- HERO SECTION -->
-          <section class="hero">
-            <div class="wrap">
-              <div class="row small-up-2">
-                <!-- First Col Text -->
-                <div class="small-6 columns">
-                  <h1>Long Pham</h1>
-                  <h3 class="subheader">Graduate Software Engineer</h3>
-                  <h5 class="subheader">Western University</h5>
-                  <br>
- 
-                  <a href="#" class="button success">Resume</a>
-                  <a href="#" class="button" id="contactButton">Contact me</a>
-                </div>
-                <!-- Second Col Image -->
-                <div class="small-6 columns">
-                  <img src="images/borderprofile.png">
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-          <!-- MAIN -->
-          <section class="main">
-            <div class="wrap">
-
-              <!-- First row -->
-              <div class="row">
-                <div class="small-12 columns">
-                  <h1>Hi, there!</h1>
-                  <hr>
-                  <p>My name is Long Pham and I've been a student for 4 years at Western University located in London, and yes, the Canada London. At this school, I've been studying hard to become a software engineer and I've learned to love it. As a graduated student, it's time to experience the <span id="realworldtext">real world</span>.</p>
-                </div>
-              </div>
-
-              <!-- Second Row -->
-
-              <!-- <div class="row"> -->
-
-                <!-- First col -->
-    <!--             <div class="small-6 columns">
-                  <h1>First Col</h1>
-                  <p>some big image</p>
-                </div>
- -->
-                <!-- Second Col -->
-<!--                 <div class="small-6 columns">
-                  <h1>Second Col</h1>
-                  <p>a nice tagline. like i graduated or something</p>
-                </div>
-
-              </div>
- -->              
-
-
-
-              <!-- For other rows follow templating above! -->
-
-            </div>
-          </section>
-
-          <!-- FOOTER -->
-          <footer>
-            <div class="wrap">
-              <div class="row small-up-1 medium-up-3">
-                <!-- first column -->
-                <div class="small-4 columns">
-                  <h4>Contact Info</h4>
-                  <hr>
-                  <a href="#"><span>Email </span>longish222@gmail.com</a>
-                </div>
-
-                <!-- second column -->
-                <div class="small-4 columns">
-                  <h4>Site Map</h4>
-                  <hr>
-                  <!-- <a href="#">About</a> -->
-                  <a href="#">Contact</a>
-                  <a href="#">Resume</a>
-                </div>
-
-                <!-- third column -->
-                <div class="small-4 columns">
-                  <h4>Social Media</h4>
-                  <hr>
-                  <a href="#">Facebook</a>
-                  <a href="#">LinkedIn</a>
-                </div>
-              </div>
-            </div>
-          </footer>
-
-
         </div>
-      </div>
-    </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Services Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>
