@@ -1,0 +1,210 @@
+*******************************************************************************/
+/*									MISC										*/
+/********************************************************************************/
+
+
+/********************************************************************************/
+/*									NAVBAR										*/
+/********************************************************************************/
+/* Shrink the nav bar when scrolling */
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.navbar-default .navbar-collapse{
+	background-color: #ccff99;
+}
+
+.navbar {
+	background-color: #ccff99;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: rgba(0,0,0,0.8);
+}
+
+/********************************************************************************/
+/*									GENERAL										*/
+/********************************************************************************/
+
+section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    display: block;
+}
+
+.section-heading-hr{
+    border-top: 1px solid #CCCCCC;
+}
+
+.section-subheading-hr{
+    border-top: 1px solid #EEEEEE;
+}
+
+
+/*********************** OVERRIDE BUTTONS	************************/ 
+.btn-primary{
+	background-color: #15A12D;
+	border-color: #15A12D;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+	background-color: #135F20;
+	border-color: #135F20;
+}
+
+.btn-primary:active:focus {
+	background-color: #15A12D;
+	border-color: #15A12D;
+}
+
+.btn-info{
+	background-color: #A57AB8;
+	border-color: #A57AB8;
+}
+
+.btn-info:active:focus {
+	background-color: #A57AB8;
+	border-color: #A57AB8;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active{
+	background-color: #7B5D88;
+	border-color: #7B5D88;
+}
+
+/********************************************************************************/
+/*									HERO/INTRO									*/
+/********************************************************************************/
+header {
+	padding-top: 250px;
+	padding-bottom: 200px;
+	background-image: url("../image/background_image/bg2.png");
+}
+
+header h1 {
+	color: rgba(255,255,255, 0.9);
+}
+
+/********************************************************************************/
+/*									SECTION - ABOUT								*/
+/********************************************************************************/
+.section-about{
+	background-color: #FBFBFB;
+}
+
+.section-about .text-position-center {
+	/*padding-top: 30px;*/
+	line-height: 30px;
+}
+
+.section-about .panel-heading{
+	cursor: pointer;
+	background-color: #15A12D;
+}
+
+.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
+	color: rgba(255,255,255,0.9);
+}
+
+/*****************************		IMAGE GALLERY	*******************************/
+
+.section-about .thumbnail {
+	width: 200px;
+	height: 150px;
+	margin: auto;
+}
+
+.section-about .thumbnail>img {
+	height: 100%;
+}
+
+.section-about .about-gallery {
+	width: 20%;
+}
+
+
+/********************************************************************************/
+/*									SECTION - EXPERIENCE								*/
+/********************************************************************************/
+.section-experience{
+	background-color: #FBFBFB;
+}
+
+/********************************************************************************/
+/*									SECTION - RESUME								*/
+/********************************************************************************/
+.section-resume{
+	background-color: #FBFBFB;
+}
+
+.section-resume .resume-object {
+	height: 500px;
+	width: 80%;
+	display:block;
+	margin:0 auto;
+}
+
+/********************************************************************************/
+/*									SECTION - CONTACT								*/
+/********************************************************************************/
+.section-contact{
+	background-color: #FBFBFB;
+}
+
+/********************************************************************************/
+/*									FOOTER										*/
+/********************************************************************************/
+footer {
+	background-color: black;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/*ul.social-buttons li a:hover{
+	background-color: #ccff99;
+}
+
+ul.social-buttons li a:focus{
+	background-color: #ccff99;
+}
+*/
+footer hr{
+	border-color: rgba(255,255,255,0.2);
+	margin-bottom: 5px;
+}
+
+footer h4{
+	color: rgba(255,255,255,0.5);;	
+}
+
+footer a{
+	color: rgba(255,255,255,0.4);
+}
+
+footer a:hover, footer a:focus{
+	color: #ccff99;
+}
+
+/*footer .fa {
+	color: #144a96;
+}
