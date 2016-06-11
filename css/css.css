@@ -1,4 +1,4 @@
-*******************************************************************************/
+/*******************************************************************************/
 /*									MISC										*/
 /********************************************************************************/
 
@@ -21,11 +21,13 @@
 }
 
 .navbar-default .navbar-collapse{
-	background-color: #ccff99;
+	/*background-color: #ccff99;*/
+	background-color: #EAEAEA;
 }
 
 .navbar {
-	background-color: #ccff99;
+	/*background-color: #ccff99;*/
+	background-color: #EAEAEA;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -45,6 +47,7 @@ section{
 	padding-bottom: 100px;
 }
 
+/*center within div*/
 .center {
     margin: auto;
     width: 60%;
@@ -60,6 +63,10 @@ section{
     border-top: 1px solid #EEEEEE;
 }
 
+a {
+	color: #135F20;
+}
+
 
 /*********************** OVERRIDE BUTTONS	************************/ 
 .btn-primary{
@@ -67,9 +74,14 @@ section{
 	border-color: #15A12D;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.hover, .btn-primary.active:hover, .btn-primary.focus:active{
 	background-color: #135F20;
 	border-color: #135F20;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+	background-color: #135F20; 
+	border-color: #135F20; 
 }
 
 .btn-primary:active:focus {
@@ -90,6 +102,12 @@ section{
 .btn-info:hover, .btn-info:focus, .btn-info:active{
 	background-color: #7B5D88;
 	border-color: #7B5D88;
+}
+
+/********************TABS ***************************/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background-color: #15A12D;
+	border-color: #15A12D;	
 }
 
 /********************************************************************************/
@@ -114,7 +132,7 @@ header h1 {
 
 /********************** profile card ******************/
 .section-about .profile-card{
-	background-color: #CCCCCC;
+	background-color: #EAEAEA;
 	box-shadow: 10px 10px 5px #888888;
 
 }
@@ -178,18 +196,80 @@ header h1 {
 	background-color: #FBFBFB;
 }
 
+
+/************************PDF*************************/
 .section-resume .resume-object {
-	height: 500px;
+	height: 700px;
 	width: 90%;
 	display:block;
 	margin:0 auto;
 }
+
+/************************HTML*************************/
+.section-resume .resume-html {
+	background-color: #EAEAEA;
+	box-shadow: 10px 10px 5px #888888;
+	padding-top: 40px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 40px
+}
+
+.section-resume img.resume-picture {
+	width: 45%;
+}
+
+.section-resume .certificate-card{
+	border: 3px solid;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.section-resume #HTMLResume > div:nth-child(1) > div.col-lg-4.resume-contact{
+	padding-top: 57px;
+	padding-bottom: 0px;
+}
+.section-resume img.certification-image {
+	width: 120px;
+	height: 90px;
+}
+
+.section-resume .certification-text{
+	padding-top: 15px;
+}
+
+.section-resume .resume-heading-hr {
+	border-color: #888888;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.section-resume .resume-subheading-hr {
+	border-color: #BBBBBB;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.section-resume a.tab-btn-resume{
+	background-color: #EAEAEA;
+	border: 1px solid;
+}
+
+.section-resume .progress{
+	border: 1px solid black;
+	margin-top: 20px;
+	/*box-shadow: 5px 5px 2px #888888;*/
+}
+
 
 /********************************************************************************/
 /*									SECTION - CONTACT								*/
 /********************************************************************************/
 .section-contact{
 	background-color: #FBFBFB;
+
 }
 
 /********************************************************************************/
