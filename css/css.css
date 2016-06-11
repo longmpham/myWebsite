@@ -112,6 +112,18 @@ header h1 {
 	background-color: #FBFBFB;
 }
 
+/********************** profile card ******************/
+.section-about .profile-card{
+	background-color: #CCCCCC;
+	box-shadow: 10px 10px 5px #888888;
+
+}
+
+.section-about .profile-card table>tbody>tr>th{
+	width: 120px;
+}
+
+/********************* accordian info *****************/
 .section-about .text-position-center {
 	/*padding-top: 30px;*/
 	line-height: 30px;
@@ -120,6 +132,11 @@ header h1 {
 .section-about .panel-heading{
 	cursor: pointer;
 	background-color: #15A12D;
+}
+
+.panel-heading:hover{
+	background-color: #135F20;
+	border-color: black;
 }
 
 .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
@@ -150,6 +167,10 @@ header h1 {
 	background-color: #FBFBFB;
 }
 
+.section-experience img {
+	background-color: #202020;
+}
+
 /********************************************************************************/
 /*									SECTION - RESUME								*/
 /********************************************************************************/
@@ -159,7 +180,7 @@ header h1 {
 
 .section-resume .resume-object {
 	height: 500px;
-	width: 80%;
+	width: 90%;
 	display:block;
 	margin:0 auto;
 }
