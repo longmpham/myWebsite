@@ -137,9 +137,9 @@ header h1 {
 
 }
 
-.section-about .profile-card table>tbody>tr>th{
+/*.section-about .profile-card table>tbody>tr>th{
 	width: 120px;
-}
+}*/
 
 /********************* accordian info *****************/
 .section-about .text-position-center {
@@ -157,8 +157,34 @@ header h1 {
 	border-color: black;
 }
 
-.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
+.section-about .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
 	color: rgba(255,255,255,0.9);
+}
+
+.section-about img.gamer-thumbnail {
+	height: 120px;
+}
+
+@media only screen and (max-width: 1098px) {
+	.section-about img.gamer-thumbnail {
+		height: 60px;
+		width: 60px;
+	}
+
+	.section-about img.western-logo {
+		height: 120px;
+		width: 120px;
+	}
+
+	.section-about img.profile-picture {
+		height: 200px;
+		width: 200px;
+	}
+
+	.section-about img.camp-image {
+		height: 120px;
+		width: 200px;
+	}
 }
 
 /*****************************		IMAGE GALLERY	*******************************/
@@ -166,15 +192,11 @@ header h1 {
 .section-about .thumbnail {
 	width: 200px;
 	height: 150px;
-	margin: auto;
+	margin: 10px auto;
 }
 
 .section-about .thumbnail>img {
 	height: 100%;
-}
-
-.section-about .about-gallery {
-	width: 20%;
 }
 
 
@@ -185,8 +207,16 @@ header h1 {
 	background-color: #FBFBFB;
 }
 
-.section-experience img {
-	background-color: #202020;
+.section-experience .experience-item {
+	margin: 2px auto;
+	float: none;
+	height: auto;
+	width: 300px;
+}
+
+.section-experience img.experience-image-preview {
+	width: 300px;
+	height:200px;
 }
 
 /********************************************************************************/
@@ -215,6 +245,10 @@ header h1 {
 	padding-bottom: 40px
 }
 
+.section-resume .resume-contact {
+	margin-top: 58px;
+}
+
 .section-resume img.resume-picture {
 	width: 45%;
 }
@@ -234,6 +268,8 @@ header h1 {
 .section-resume img.certification-image {
 	width: 120px;
 	height: 90px;
+	margin: auto;
+	padding: 0;
 }
 
 .section-resume .certification-text{
