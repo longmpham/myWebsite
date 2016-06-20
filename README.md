@@ -2,4 +2,4 @@
 Practicing version control with my own website!
 
 ## Practice Makes Perfect
-You can use my website for whatever you need. It's mostly just a playground for myself to learn more about web technologies. 
+It's mostly just a playground for myself to learn more about web technologies. Use it as you will, or leave some feedback if there is something I can improve on!
