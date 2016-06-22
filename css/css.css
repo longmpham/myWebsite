@@ -6,6 +6,18 @@
 /********************************************************************************/
 /*									NAVBAR										*/
 /********************************************************************************/
+
+/*invisible at first!*/
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 10007;
+}
+
 /* Shrink the nav bar when scrolling */
 @media(min-width:767px) {
     .navbar {
@@ -22,12 +34,12 @@
 
 .navbar-default .navbar-collapse{
 	/*background-color: #ccff99;*/
-	background-color: #EAEAEA;
+	/*background-color: #EAEAEA;*/
 }
 
 .navbar {
 	/*background-color: #ccff99;*/
-	background-color: #EAEAEA;
+	/*background-color: #EAEAEA;*/
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -133,6 +145,72 @@ a {
 }
 
 /********************************************************************************/
+/*									PARALLAX STUFF									*/
+/********************************************************************************/
+
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(../image/parallax_image/grad.jpg) no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  /*opacity: 0.7;*/
+}
+.content-space-two {
+  	padding: 0px;
+  	margin-bottom: 0px;
+  	color: inherit;
+  	background: url(../image/parallax_image/woc_pinery.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding-top: 300px;
+  	padding-bottom: 300px;
+	/*opacity: 0.7;*/
+}
+.content-space-three {
+  	padding: 0px;
+  	margin-bottom: 0px;
+  	color: inherit;
+  	background: url(../image/parallax_image/tobermory.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  	background-size: cover;
+  	padding-top: 300px;
+  	padding-bottom: 300px;
+  	/*opacity: 0.7;*/
+}
+
+.parallax-line-break {
+	border-color: white;
+	border-top: 5px solid white;
+	width: 50%;
+}
+
+.parallax-heading {
+	/*font-size: 48px;*/
+	color: white;
+	font-weight: bold;
+}
+
+.parallax-subheading {
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+}
+
+.parallax-text{
+	background-color: rgba(0,0,0,0.3);
+}
+
+/********************************************************************************/
 /*									HERO/INTRO									*/
 /********************************************************************************/
 header {
@@ -156,12 +234,12 @@ header h1 {
 .section-about .profile-card{
 	background-color: #EAEAEA;
 	box-shadow: 10px 10px 5px #888888;
-
+	margin-bottom: 20px;
 }
 
-/*.section-about .profile-card table>tbody>tr>th{
-	width: 120px;
-}*/
+.section-about .profile-card table>tbody>tr>th{
+	width: 150px;
+}
 
 /********************* accordian info *****************/
 .section-about .text-position-center {
